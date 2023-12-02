@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3909910-4f94-4a69-8e06-0c8ee5897cce" name="变更" comment="更正">
+      <change beforePath="$PROJECT_DIR$/code/code.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/code.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/5c94f213-deb7-4296-8d75-db2c42297a744a67cb43b1aba0b47d0779f8f304152d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/b6475e1e-01be-4d36-b533-aa853d5597b017d1615074ecf98f28c841d4b9a829fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/md-img/2a7a33a3-516d-4e95-a503-3597cc7fe3a3-4a67cb43b1aba0b47d0779f8f304152d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/md-img/4245199e-4dc4-40b6-babc-482baf378557-4a67cb43b1aba0b47d0779f8f304152d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/md-img/cbc4d3e3-36ea-4688-88f5-16933584fd4c-4a67cb43b1aba0b47d0779f8f304152d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/1d1d74d9-98a2-44e2-9e70-e200e465aec8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/5c9312e3-13f0-4040-914a-b0a6c3d634df.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/7047eae4-0675-4242-99e7-0363c6f9a6a5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/a4f556f1-168c-4759-be11-778bf52e024e.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/f67a7498-0664-4d6d-a23f-847dd1535f33.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/facc99a5-ba3a-4c0f-a3ad-1f42561d94dd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/PlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/PlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/TypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/easystudy/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/easystudy/EasyStudyApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="new_branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Muyan925&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="275c801a-8bec-4b4b-b6cf-78f88e666e8e" />
+        <option name="url" value="https://github.com/Muyan925/The-Women-s-Book-Club-Service.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2NrsUP79YTEYyC9eoxxy5c6eVh2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;IT-CW&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Easy Study 源代码_无短信验证码(1)/Easy Study 源代码_无短信验证码/易启智学服务端&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.SSH&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;68198fef62e134c17b1a1534d14ba57e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="易启智学服务端" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="易启智学服务端" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyStudyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EasyStudy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.easystudy.EasyStudyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\LENOVO\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c3909910-4f94-4a69-8e06-0c8ee5897cce" name="变更" comment="" />
+      <created>1680433552133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680433552133</updated>
+      <workItem from="1680433553339" duration="691000" />
+      <workItem from="1681112784623" duration="2157000" />
+      <workItem from="1681198668540" duration="2349000" />
+      <workItem from="1681277400255" duration="249000" />
+      <workItem from="1681368938860" duration="22549000" />
+      <workItem from="1681986700795" duration="1194000" />
+      <workItem from="1682234043092" duration="753000" />
+      <workItem from="1682497638885" duration="494000" />
+      <workItem from="1682498333159" duration="99000" />
+      <workItem from="1684317788667" duration="2383000" />
+      <workItem from="1684470052935" duration="2281000" />
+      <workItem from="1686030768412" duration="13000" />
+      <workItem from="1686030796988" duration="526000" />
+      <workItem from="1700689785339" duration="3503000" />
+      <workItem from="1700704630718" duration="2751000" />
+      <workItem from="1700735295933" duration="2195000" />
+      <workItem from="1700743883277" duration="47000" />
+      <workItem from="1700743944281" duration="21000" />
+      <workItem from="1700744223011" duration="1664000" />
+      <workItem from="1700838960639" duration="2014000" />
+      <workItem from="1700844282672" duration="1877000" />
+      <workItem from="1700905904187" duration="752000" />
+      <workItem from="1700907393003" duration="5326000" />
+      <workItem from="1700942718877" duration="120000" />
+      <workItem from="1700943049796" duration="3328000" />
+      <workItem from="1701025081979" duration="8716000" />
+      <workItem from="1701467743889" duration="1143000" />
+      <workItem from="1701470007650" duration="1464000" />
+      <workItem from="1701471778515" duration="146000" />
+      <workItem from="1701494671065" duration="1260000" />
+      <workItem from="1701500061465" duration="1270000" />
+      <workItem from="1701501372833" duration="23000" />
+      <workItem from="1701515929156" duration="230000" />
+      <workItem from="1701516797770" duration="724000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加短信验证码功能">
+      <created>1681373076748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681373076748</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更正">
+      <created>1681545592560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681545592560</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更正">
+      <created>1681561064187</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681561064187</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="变更" />
+    <MESSAGE value="添加短信验证码功能" />
+    <MESSAGE value="更正" />
+    <option name="LAST_COMMIT_MESSAGE" value="更正" />
+  </component>
+</project>

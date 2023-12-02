@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.easystudy.dao.PlanDao" >
+    <select id="selectFNumber" resultType="java.lang.Integer">
+        select count(*) from plan where uId = #{uId} and planStatus = 1
+    </select>
+    <select id="selectUNumber" resultType="java.lang.Integer">
+        select count(*) from plan where uId = #{uId} and planStatus = 0
+    </select>
+    <select id="GetAllPlansByUid" resultType="com.example.easystudy.pojo.Plan">
+        select * from plan where uId = #{uId} limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="GetPlanCountByUid" resultType="int">
+        select count(*) from plan where uId = #{uId}
+    </select>
+    <insert id="AddPlans" parameterType="com.example.easystudy.pojo.Plan">
+        insert into plan (uId,planName,planStress,startTime,endTime,planInfo)
+        values  (#{uId},#{planName},#{planStress},#{startTime},#{endTime},#{planInfo})
+    </insert>
+    <select id="ShowPlanBasicInfoByPid" resultType="com.example.easystudy.pojo.Plan">
+        select * from plan where pId = #{pId}
+    </select>
+    <update id="UpdatePlanBasicInfo" parameterType="com.example.easystudy.pojo.Plan">
+        update plan
+        <trim prefix="set" suffixOverrides=",">
+            <if test="planName != null and planName != '' ">
+                planName = #{planName},
+            </if>
+            <if test="planStress != null and planStress != '' ">
+                 planStress = #{planStress},
+            </if>
+            <if test="planInfo !=null and planInfo != '' ">
+                 planInfo = #{planInfo},
+            </if>
+            <if test="startTime !=null and startTime != '' ">
+                 startTime = #{startTime},
+            </if>
+            <if test="endTime !=null and endTime!='' ">
+                endTime = #{endTime},
+            </if>
+            <if test="planStatus != null and planStatus !='' or planStatus==0">
+                 planStatus = #{planStatus}
+            </if>
+        </trim>
+        where pId = #{pId}
+    </update>
+
+    <!--或取未完成计划-->
+    <select id="GetUnfinishedPlansByUid" resultType="com.example.easystudy.pojo.Plan">
+        select * from plan where uId = #{uId} and planStatus = 0
+    </select>
+    <select id="SelectPlansByKeyword" resultType="com.example.easystudy.pojo.Plan">
+        select * from plan where planName like concat('%',#{planName},'%') and uId = #{uId} limit #{pageBegin}, #{pageSize}
+    </select>
+    <select id="SelectPlanCountByKeyword" resultType="int">
+        select count(*) from plan where planName like concat('%',#{planName},'%') and uId = #{uId}
+    </select>
+    <delete id="DeleteSinglePlanByPid">
+        delete from plan where pId = #{pId}
+    </delete>
+    <select id="FilterPlans" resultType="com.example.easystudy.pojo.Plan">
+        select * from plan where uId = #{uId}
+        <if test="planStress!=null and  planStress!='' ">
+        and planStress = #{planStress}
+        </if>
+        <if test="planStatus!=null and  planStatus!='' or planStatus==0">
+        and planStatus = #{planStatus}
+        </if>
+        limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="FilterPlanCount" parameterType="com.example.easystudy.pojo.Plan" resultType="int">
+        select count(*) from plan where uId = #{uId}
+        <if test="planStress!=null and  planStress!='' ">
+            and planStress = #{planStress}
+        </if>
+        <if test="planStatus!=null and  planStatus!='' or planStatus==0">
+            and planStatus = #{planStatus}
+        </if>
+    </select>
+</mapper>
