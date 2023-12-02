@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.easystudy.dao.NoteDao" >
+    <select id="selectRNumber" resultType="java.lang.Integer">
+        select count(*) from note where uId = #{uId} and noteStatus = 1
+    </select>
+    <select id="selectWNumber" resultType="java.lang.Integer">
+        select count(*) from note where uId = #{uId} and noteStatus = 0
+    </select>
+    <update id="deleteNoteByTid">
+        update note set tId = NULL where tId = #{tId}
+    </update>
+    <select id="GetAllNoteByUid" resultType="com.example.easystudy.pojo.Note">
+        select n.*,t.typeName from note n,type t where n.tId = t.tId and n.uId = #{uId} limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="GetNoteCountByUid" resultType="int">
+        select count(*) from note n,type t where n.tId = t.tId and n.uId = #{uId}
+    </select>
+    <select id="ShowNoteInfoByNid" resultType="com.example.easystudy.pojo.Note">
+        select n.*,t.typeName from note n,type t where nId = #{nId} and n.tId = t.tId
+    </select>
+    <select id="SelectNotesByKeyword" resultType="com.example.easystudy.pojo.Note">
+        select n.*,t.typeName from note n,type t where noteName LIKE concat('%',#{noteName},'%') and n.uId =#{uId} and n.tId = t.tId limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="SelectNoteCountByKeyword" resultType="int">
+        select count(*) from note n,type t where noteName LIKE concat('%',#{noteName},'%') and n.uId =#{uId} and n.tId = t.tId
+    </select>
+    <delete id="DeleteSingleNoteByNid">
+        delete  from note where nId = #{nId}
+    </delete>
+    <select id="FilterNotes" resultType="com.example.easystudy.pojo.Note">
+        select n.*,t.typeName from note n,type t where n.uId = #{uId}
+        <if test="notePress != null and notePress != '' ">
+        and notePress = #{notePress}
+        </if>
+        <if test="noteStatus != null and  noteStatus !='' or  noteStatus==0">
+        and noteStatus = #{noteStatus}
+        </if>
+        <if test="typeName != null and typeName != ''">
+            and t.typeName = #{typeName}
+        </if>
+        and n.tId = t.tId
+
+        limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="FilterNoteCount" resultType="int">
+        select count(*) from note n,type t where n.uId = #{uId}
+        <if test="notePress != null and notePress != '' ">
+            and notePress = #{notePress}
+        </if>
+        <if test="noteStatus != null and  noteStatus !='' or  noteStatus==0">
+            and noteStatus = #{noteStatus}
+        </if>
+        <if test="typeName != null and typeName != ''">
+            and t.typeName = #{typeName}
+        </if>
+        and n.tId = t.tId
+    </select>
+    <update id="UpdateNoteInfoByNid" parameterType="com.example.easystudy.pojo.Note">
+        update note
+        <trim prefix="set" suffixOverrides=",">
+        <if test="noteName != null and noteName != '' ">
+            noteName = #{noteName},
+        </if>
+        <if test="notePress != null and notePress != '' ">
+            notePress = #{notePress},
+        </if>
+        <if test="noteStatus != null and noteStatus != '' or noteStatus==0 ">
+            noteStatus = #{noteStatus}
+        </if>
+        </trim>
+        where nId = #{nId}
+    </update>
+    <insert id="AddNotes" parameterType="com.example.easystudy.pojo.Note">
+        insert into note (noteName,notePress,uId,fileLocation,tId)
+        values (#{noteName},#{notePress},#{uId},#{fileLocation},#{tId})
+    </insert>
+    <select id="GetNotesToAdd" resultType="com.example.easystudy.pojo.Note">
+        select n.*,t.typeName from note n,type t where nId not in(select ntop.nId from ntop where pId = #{pId})
+        and n.uId = (select plan.uId from plan where pId = #{pId}) and n.tId = t.tId
+    </select>
+    <select id="SetDefaultTid" resultType="com.example.easystudy.pojo.Note" >
+        select * from note where uId = #{uId} and tId is Null limit #{beginPage}, #{pageSize}
+    </select>
+
+    <select id="SetDefaultTidCount" resultType="int">
+        select count(*) from note where uId = #{uId} and tId is Null
+    </select>
+    <select id="SetDefaultByNid" resultType="com.example.easystudy.pojo.Note" >
+        select * from note where nId = #{nId} and tId is NUll
+    </select>
+    <select id="GetAllNullNoteByKeyword" resultType="com.example.easystudy.pojo.Note">
+        select * from note where noteName LIKE concat('%',#{noteName},'%') and uId = #{uId} and tId is NULL limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="GetAllNullNoteCountByKeyword" resultType="int">
+        select count(*) from note where noteName LIKE concat('%',#{noteName},'%') and uId = #{uId} and tId is NULL
+    </select>
+    <select id="FilterNullNotes" resultType="com.example.easystudy.pojo.Note">
+        select * from note  where uId = #{uId}
+        <if test="notePress != null and notePress != '' ">
+            and notePress = #{notePress}
+        </if>
+        <if test="noteStatus != null and  noteStatus !='' or  noteStatus==0">
+            and noteStatus = #{noteStatus}
+        </if>
+        and tId is NULL limit #{beginPage}, #{pageSize}
+    </select>
+    <select id="FilterNullNoteCount" resultType="int">
+        select count(*) from note  where uId = #{uId}
+        <if test="notePress != null and notePress != '' ">
+            and notePress = #{notePress}
+        </if>
+        <if test="noteStatus != null and  noteStatus !='' or  noteStatus==0">
+            and noteStatus = #{noteStatus}
+        </if>
+        and tId is NULL
+    </select>
+    <select id="GetNullNotesToAdd" resultType="com.example.easystudy.pojo.Note">
+        select * from note  where nId not in(select ntop.nId from ntop where pId = #{pId})
+         and uId = (select plan.uId from plan where pId = #{pId}) and tId is NULL
+    </select>
+</mapper>

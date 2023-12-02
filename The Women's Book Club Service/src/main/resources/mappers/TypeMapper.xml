@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.easystudy.dao.TypeDao" >
+
+<select id="selectTypeListByUid" resultType="com.example.easystudy.pojo.Type">
+    select * from type where uId = #{uId}
+</select>
+
+<update id="updateTypeByTid">
+    update type set typeName = #{typeName} where tId = #{tId}
+</update>
+
+<insert id="addType" parameterType="com.example.easystudy.pojo.Type">
+    insert into type (uId,typeName)
+    values (#{uId},#{typeName})
+</insert>
+
+<delete id="deleteTypeByTid">
+    delete from type where tId = #{tId}
+</delete>
+
+    <select id="SelectTypeByTid" resultType="com.example.easystudy.pojo.Type">
+        select * from type where tid = #{tId}
+    </select>
+
+</mapper>

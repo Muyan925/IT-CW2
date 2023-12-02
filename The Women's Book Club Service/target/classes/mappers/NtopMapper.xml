@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.easystudy.dao.NtopDao" >
+
+ <delete id="deleteNtopByPid">
+     delete from ntop where pId = #{pId}
+ </delete>
+
+<delete id="RemoveNotesFromPlan">
+     delete from ntop where pId = #{pId} and nId = #{nId}
+</delete>
+
+<delete id="deleteNtopByNid">
+     delete from ntop where nId = #{nId}
+</delete>
+
+<insert id="AddNotesToPlan">
+     insert into ntop (nId,pId)
+     values (#{nId},#{pId})
+</insert>
+
+<select id="ShowNidByPid" resultType="java.lang.Integer">
+    select nId from ntop where pId = #{pId}
+</select>
+
+</mapper>
